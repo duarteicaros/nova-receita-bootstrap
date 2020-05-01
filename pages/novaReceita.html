@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/novaReceita.css">
+    
+    
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   </head>
+
+<body>
+    <div class="principal">
+        <img src="../assets/imagens/novareceita/img/enviar.png" class="enviar-receita">
+        <h1>Envie Sua Receita</h1>
+
+        <div>
+            <textarea class="nome-da-receita" cols="80"  placeholder="Qual O Nome da sua Receita?" rows="1"></textarea>
+        </div><!--Fechameno nome da Receita-->
+
+        <div class="row">
+            <div class="foto-da-receita">
+                <img src="../assets/imagens/novareceita/img/camera.png" class="foto-receita">
+                <p>
+                    Anexe fotos das suas receitas
+                </p>
+                <p>
+                    Maximo de 10 fotos por receita
+                </p>
+            </div><!--Fechameto fotos das receitas-->
+            
+        
+            <div class="foto-principal">
+                <img src="../assets/imagens/novareceita/img/fotofavorita.png" class="perfil">
+                <p>
+                    Escolha a Melhor foto para a Cara da sua Receita
+                </p>
+            </div><!--Fechamento foto Principal-->
+                
+            <input type="submit" value= "Enviar Fotos" class="botao">
+            <input type="button" value="Escolher" class="botao">
+                
+            
+        </div><!--Fechamento Div ROW-->
+
+        <div class="row">
+            <div class="tempo-de-preparo">
+                <img src="../assets/imagens/novareceita/img/relogio.png" class="relogio">
+                <p>Tempo de preparo</p>
+                <input class="preparo" step="1" type="number">
+                <p>Minutos</p>
+            </div><!--Fecamento De Tempo de Preparo-->
+
+            <div class="quantidade-de-porção">
+                <img src="../assets/imagens/novareceita/img/porção.png" class="porções">
+                <p>Porções</p>
+                <input class="porção" step="1" type="number">
+                <p>Porções</p>
+            </div><!--Fecamento De Porções-->
+        </div><!--Fechamento Div ROW-->
+
+        <div>
+            <label for="Categoria"></label>
+                <select name="Categoria" class="categoria">
+                    <option>Selecione Uma Categoria para sua Receita</option>
+                    <option>Bolos e tortas doces</option>
+                    <option>Carnes</option>
+                    <option>Aves</option>
+                    <option>Peixes e frutos do mar</option>
+                    <option>Saladas, molhos e acompanhamentos</option>
+                    <option>Sopas</option>
+                    <option>Massas</option>
+                    <option>Bebidas</option>
+                    <option>Doces e sobremesas</option>
+                    <option>Lanches</option>
+                    <option>Prato Único</option>
+                    <option>Light</option>
+                    <option>Alimentação Saudável</option>
+                </select>
+        </div><!--Fechamento Categoria da Receita-->
+
+        <div class="row">
+        
+            <img src="../assets/imagens/novareceita/img/ingredientes.png" class="ingredientes">
+            <h1>INGREDIENTES</h1>
+        </div>
+        
+        <div>
+            <p>Escreva cada ingrediente por linha.  </p>
+            <p class="observação">*Não separe por hífen, numeração ou outro.</p>
+        
+            
+                <div>
+                    <textarea class="caixa-ingredientes" placeholder="Ex: 01 colher de manteiga" rows="1"></textarea>
+                </div><!--Fechameno nome da Receita-->
+            
+        </div>
+    
+        <div class="row">
+            <img src="../assets/imagens/novareceita/img/preparo.png" class="modo-de-preparo">
+            <h1>MODO DE PREPARO</h1>
+        </div>
+
+        <div class="">
+            <div>
+            <p>Descreva para nós o passo-a-passo por linha.  </p>
+            <p class="observação">*Não separe por hífen, numeração ou outro.</p>
+            </div>
+
+            <div>
+                <textarea class="modo-preparo"  placeholder="Escreva aqui o modo de preparo" rows="1"></textarea>
+            </div><!--Fechameno nome da Receita-->
+
+        </div>
+
+        <div class="row">
+
+            <img src="../assets/imagens/novareceita/img/revisão.png" class="revisão">
+            <h1>ANTES DE ENVIAR</h1>
+
+        </div>
+
+        <ul>
+            <li>Revise sua receita para ter certeza que as quantidades estão corretas e que todos os itens estão presentes.</li>
+            <li>Fotos retiradas da internet não serão aceitas, apenes envie fotos tiradas por você.</li>
+    
+        </ul>
+
+        <button onclick="window.location.href = '';" class="botao">Enviar Receita</button>
+    
+    
+    </div><!--Div Principal-->
+
+
+<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
